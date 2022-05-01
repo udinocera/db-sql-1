@@ -1,0 +1,24 @@
+QUERY 1:
+SELECT * from teachers;
+QUERY 2:
+SELECT head_of_department from departments;
+QUERY 3:
+SELECT * FROM degrees WHERE level = 'magistrale';
+QUERY 4:
+SELECT * FROM students where name = 'Marco';
+QUERY 5:
+SELECT * from courses where cfu >=12;
+QUERY 6:
+SELECT * from courses where cfu >10 or cfu <5;
+QUERY 7:
+SELECT * FROM courses where period = 'I semestre' and year = 1;
+QUERY 8:
+SELECT * FROM courses where website IS NULL;
+QUERY 9:
+SELECT * FROM teachers where phone is not null;
+QUERY 10:
+SELECT * FROM students where name like 'E%';
+QUERY 11:
+SELECT COUNT(name) from teachers where name like 'E%';
+QUERY 12:
+SELECT count(*) from teachers where phone is null;
